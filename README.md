@@ -1,4 +1,5 @@
 # Wikipedia Best-Selling Books Data Project
+![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/books-world.jpg)
 
 ## Overview
 This project focuses on scraping, cleaning, analyzing, and visualizing data from Wikipedia’s **List of best-selling books** page. The goal was to build a simple end-to-end data project that demonstrates how raw web data can be collected, transformed into a usable dataset, and explored through analysis and visualizations.
@@ -51,28 +52,29 @@ The dataset required several cleaning steps before analysis:
   - removing notes in parentheses
   - converting it to a numeric data type for easier analysis.
 
-The final working dataset included the following key columns:
-- `Book Title`
-- `Author(S)`
-- `Original Language`
-- `Approximate Sales`
-- `First Published`
-- `Approximate Sales`
-
-### 4. Exploratory Data Analysis
+### 3. Exploratory Data Analysis
 I explored the dataset to answer questions such as:
-- Which books have the highest approximate sales?
-- Which original languages appear most often?
-- Which authors appear most frequently?
-- How are books distributed over time?
 
-### 5. Data Visualization
+**Which books have the highest approximate sales?**
+  ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/top10bookstable.png)
+**Which original languages appear most often?**
+  ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/bookbylanguagetable.png)
+**Which authors appear most frequently?**
+  ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/top10authorstable.png)
+**How are books distributed over time?**
+  ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/bookbyyeartable.png)
+
+### 4. Data Visualization
 I created visualizations to better understand the dataset, including:
-- Top 10 best-selling books
-- Number of books by original language
-- Number of books by genre
-- Total sales by language
-- Publication trend by decade
+
+**Top 10 best-selling books:**
+  ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/top10booksoutput.png)
+**Number of books by original language:**
+  ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/bookcountlanguageoutput.png)
+**Total sales by language:**
+  ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/salesbylanguageoutput.png)
+**Publication trend by decade:**
+  ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/booksbydecadeoutput.png)
 
 Since the publication years spanned a very wide range, grouping books by **decade** produced a clearer and more meaningful trend than plotting every year individually.
 
@@ -80,7 +82,7 @@ Since the publication years spanned a very wide range, grouping books by **decad
 Some notable insights from the analysis include:
 
 - English was the most common original language in the dataset
-- A large number of records had missing genre information, which were labeled as `"Unknown"`
+- A large number of records had missing genre information, which led to dropping the column as it couldn't provide any useful analytical information.
 - Book series contributed some of the highest sales values
 - Publication activity was much more concentrated in modern decades than in earlier centuries
 - Sales values were stored as text and needed significant cleaning before they could be analyzed numerically
