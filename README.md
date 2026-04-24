@@ -78,7 +78,7 @@ I created visualizations to better understand the dataset, including:
 
 Since the publication years spanned a very wide range, grouping books by **decade** produced a clearer and more meaningful trend than plotting every year individually.
 
-##Code Snippet
+## Code Snippet
 ![](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/Code.png)
 **_click [here](https://github.com/temee0/Data-Scraping-cleaning-analyzing-visualizing-with-python/blob/main/Wikipedia%20Best%20Seller%20Notebook.ipynb) to view the Jupiter notebook for this project_**
 
